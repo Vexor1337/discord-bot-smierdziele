@@ -1,7 +1,6 @@
 package features
 
 import dev.kord.core.Kord
-import dev.kord.core.behavior.channel.createMessage
 import dev.kord.core.behavior.edit
 import dev.kord.core.behavior.interaction.response.respond
 import dev.kord.core.entity.channel.TextChannel

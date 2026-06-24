@@ -6,7 +6,6 @@ import dev.kord.core.event.user.VoiceStateUpdateEvent
 import dev.kord.core.on
 import kotlinx.coroutines.delay
 
-// Usunęliśmy zmyślone ID. Bot sam znajdzie kanał AFK.
 suspend fun Kord.setupAutoAfk() {
     on<VoiceStateUpdateEvent> {
         val before = old
