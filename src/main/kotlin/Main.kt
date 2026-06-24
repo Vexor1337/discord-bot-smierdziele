@@ -5,7 +5,8 @@ import features.setupAutoAfk
 import features.setupPokeCommand
 
 suspend fun main() {
-    val token = "xxx"
+    val token = System.getenv("DISCORD_TOKEN")
+        ?: throw IllegalStateException("DISCORD_TOKEN not found")
 
     val kord = Kord(token) //token for discord api
 
